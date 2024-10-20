@@ -48,5 +48,5 @@ ML/Flask Deployed App/*.csv
 node_modules
 package.json
 package-lock.json
-src/main/resources/secrets
+src/main/resources/secrets/oauth_keys.properties
 
