@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base::parent(~{::#content},~{::title},~{::script})}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" data-th-href="@{'css/output.css'}" />
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100"  id="content">
+<!-- Hero Section -->
+<header class="bg-cover bg-center h-screen" style="background-image: url('/images/hero-background.jpg');">
+  <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+    <div class="text-center text-white px-6 py-8 max-w-lg">
+      <h1 class="text-5xl font-extrabold mb-4">Welcome to Organic Farming</h1>
+      <p class="text-xl mb-6">Empowering sustainable agriculture with modern technology and traditional wisdom.</p>
+      <a href="/category" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg">Get Started</a>
+    </div>
+  </div>
+</header>
+
+<!-- Features Section -->
+<section class="py-16 bg-white dark:bg-gray-800">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-8 text-center">Our Features</h2>
+    <div class="flex flex-wrap -mx-4">
+      <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
+        <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Detailed Crop Guides</h3>
+          <p>Access comprehensive guides for growing a variety of organic crops, from seeding to harvesting.</p>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
+        <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Dynamic Crop Cards</h3>
+          <p>Explore dynamic cards for different crop categories, easily accessible and visually appealing.</p>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
+        <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Interactive UI</h3>
+          <p>Enjoy a user-friendly interface with modern design elements and interactive features.</p>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
+        <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Live Weather Updates</h3>
+          <p>Receive real-time weather updates to optimize your farming activities and make informed decisions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call-to-Action Section -->
+<section class="py-16 bg-green-600 text-white">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4">Ready to Start Your Organic Farming Journey?</h2>
+    <p class="text-lg mb-8">Join us today and transform the way you grow your crops with our innovative platform.</p>
+    <a href="/contact" class="bg-white text-green-600 font-bold py-3 px-6 rounded-lg">Get Started</a>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-gray-800 text-white py-6">
+  <div class="container mx-auto px-6 text-center">
+    <p>&copy; 2024 Organic Farming. All rights reserved.</p>
+    <a href="/about" class="text-gray-400 hover:text-white">About Us</a> |
+    <a href="/contact" class="text-gray-400 hover:text-white">Contact</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+</body>
+</html>

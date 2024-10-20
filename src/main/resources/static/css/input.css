@@ -1,0 +1,4 @@
+/*npx tailwindcss -i D:\Project\scm\scm\src\main\resources\static\css\input.css -o D:\Project\scm\scm\src\main\resources\static\css\output.css --watch*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

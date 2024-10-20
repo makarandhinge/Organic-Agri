@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{base::parent(~{::#content},~{::title},~{})}">
+<head>
+  <title th:text="${flower.title}">Flower Growth Details</title>
+</head>
+<body>
+<div id="content" class="container mx-auto p-6">
+  <div class="max-w-lg mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+    <div class="w-full h-64 flex items-center justify-center overflow-hidden">
+      <img th:src="@{${flower.imageUrl}}" alt="Card Image" class="max-w-full max-h-full object-contain">
+    </div>
+    <div class="p-6">
+      <h2 class="text-2xl font-bold mb-4 text-center" th:text="${flower.title}">Flower Title</h2>
+
+      <h3 class="text-xl font-semibold mb-4">Growth Information:</h3>
+      <div th:each="detail : ${flowerDetails}" class="mb-4">
+        <h4 class="text-lg font-bold" th:text="${detail.month}">Month</h4>
+        <p class="text-gray-600 font-semibold" th:text="${detail.growthStage}">Growth Stage</p>
+        <p class="text-gray-600" th:text="${detail.details}">Details</p>
+      </div>
+
+      <div class="flex justify-center">
+        <button class="bg-green-600 text-white border border-green-600 hover:bg-green-700 hover:border-green-700 shadow-md rounded px-4 py-2">
+          <a href="/flowers" class="text-white hover:text-gray-200">Back</a>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base::parent(~{::#content},~{::title},~{::script})}">
+<head>
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+<div id="content" class="px-6 py-8 max-w-screen-lg mx-auto">
+    <h1 class="text-4xl font-extrabold mb-6 text-center">About Us</h1>
+
+    <!-- Project Information -->
+    <section class="mb-12 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-semibold mb-4">Project Information</h2>
+        <p class="text-gray-700 dark:text-gray-300">
+            Welcome to the Organic Farming App! Our project is dedicated to providing a comprehensive platform
+            for organic farming enthusiasts and practitioners. This application offers detailed step-by-step guides
+            on growing various organic crops, including vegetables, fruits, grains, and flowers. Our goal is to support
+            sustainable agriculture by offering practical insights and resources to help you successfully cultivate your
+            organic garden.
+        </p>
+        <p class="text-gray-700 dark:text-gray-300 mt-4">
+            Key features of the app include:
+        </p>
+        <ul class="list-disc list-inside ml-5 text-gray-700 dark:text-gray-300">
+            <li>Step-by-step growth procedures for different crops.</li>
+            <li>Dynamic card display for various crop categories.</li>
+            <li>Interactive UI with modern design elements.</li>
+            <li>Live weather updates to help plan your farming activities.</li>
+            <li>Personalized recommendations based on user input.</li>
+            <li>Integration with local weather data for precise guidance.</li>
+        </ul>
+    </section>
+
+    <!-- Creator Information -->
+    <section class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-semibold mb-4">About the Creator</h2>
+        <p class="text-gray-700 dark:text-gray-300">
+            This project was created by Group A3 , an engineering student passionate about sustainable agriculture
+            and technology. With a background in software development and a keen interest in organic farming, Our Group
+            aimed to develop a tool that bridges the gap between modern technology and traditional farming practices.
+            The app is a result of Our Group dedication to promoting environmentally friendly farming methods and
+            providing valuable resources to the farming community.
+        </p>
+        <p class="text-gray-700 dark:text-gray-300 mt-4">
+            If you have any questions or feedback, feel free to reach out at <a href="mailto:mmh2212002@gmail.com" class="text-blue-600 dark:text-blue-400 hover:underline">mmh2212002@gmail.com</a>.
+        </p>
+    </section>
+</div>
+
+<script>console.log("About Page")</script>
+</body>
+</html>

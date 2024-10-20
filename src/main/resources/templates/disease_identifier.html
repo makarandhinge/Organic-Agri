@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base::parent(~{::#content},~{::title},~{})}">
+<head>
+  <title>Disease Identifier Page</title>
+</head>
+<body>
+<div id="content">
+  <div class="bg-blue-10 flex items-center justify-center h-screen">
+  <div class="bg-white shadow-lg rounded-lg p-8 max-w-md w-full">
+    <h2 class="text-2xl font-semibold text-center text-gray-800 mb-6">Upload Your Image</h2>
+    <form th:action="@{/uploadImage}" method="post" enctype="multipart/form-data">
+      <input type="file" name="image" accept="image/*" required class="block w-full mb-4 border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+      <input type="submit" value="Upload Image" class="w-full bg-green-500 text-white py-2 rounded-md hover:bg-green-600 transition duration-200">
+    </form>
+
+    <p th:if="${message}" class="mt-4 text-center text-green-600" th:text="${message}"></p>
+  </div>
+  </div>
+</div>
+</body>
+</html>
