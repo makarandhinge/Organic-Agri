@@ -23,55 +23,55 @@ learning.
 
 ## Run Locally
 
-1. Clone the project
+- Clone the project
 
 ```bash
   git clone https://github.com/makarandhinge/Organic-Agri.git
 ```
 
-2. Go to the Machine Learning project directory
+- Go to the Machine Learning project directory
 
 ```bash
   cd ML
 ```
 
-3. Create a Virtual Environment
+- Create a Virtual Environment
 
 ```bash
   python -m venv env
 ```
 
-4. Activate the Environment
+- Activate the Environment
 
 ```bash
   .\env\Scripts\activate
 ```
 
-5. Install Requirements from the File
+- Install Requirements from the File
 
 ```bash
   cd "Flask Deployed App"
   pip install -r requirements.txt
 ```
 
-6. Download the machine learning model
+- Download the machine learning model
    - Download from [Google Drive](https://drive.google.com/file/d/1prENNrRypgOo2FjR6pY8B7Jbl3j3sHO4/view?usp=drive_link) and paste it in "Flask Deployed App" Folder
   
-7. Start the machine learning server
+- Start the machine learning server
 
 ```bash
   python app.py
 ```
 
-8. Open new tab and navigate to organic-agri root location
+- Open new tab and navigate to organic-agri root location
 
-9. Ensure that Java is installed on your system. You can verify this by running the following command
+- Ensure that Java is installed on your system. You can verify this by running the following command
 
 ```bash
   java -version
 ```
 
-10. Configure the Backend
+- Configure the Backend
 
 ```bash
 # Database Configuration
@@ -80,7 +80,7 @@ spring.datasource.username=<db_username>
 spring.datasource.password=<db_password>
 ```
 
-11. Configure the Oauth
+- Configure the Oauth
 
 ```bash
 # src/main/resources/secrets/oauth_keys.properties
@@ -96,7 +96,7 @@ spring.security.oauth2.client.registration.github.scope=email,profile
 
 **`Note`** - save this configuration in oauth_keys.properties and save in the given path src/main/resources/secrets/oauth_keys.properties
 
-12. To build and run the Spring Boot application, you need Maven. If Maven is not installed, you can follow the installation instructions from [here](https://github.com/makarandhinge/Installtion-Guideline/blob/main/Maven.md)
+- To build and run the Spring Boot application, you need Maven. If Maven is not installed, you can follow the installation instructions from [here](https://github.com/makarandhinge/Installtion-Guideline/blob/main/Maven.md)
 
 - Build the project
 
