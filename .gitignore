@@ -35,14 +35,13 @@ build/
 ###Machine Learning###
 ML/Model/
 ML/oldenv/
+Ml/env/
 ML/demo_images/
 ML/test_images/
 # Ignore the large model file
 ML/Flask Deployed App/plant_disease_model_1_latest.pt
 # Ignore compiled Python files
 ML/Flask Deployed App/__pycache__/
-# Ignore CSV files (optional)
-ML/Flask Deployed App/*.csv
 
 ###Project###
 node_modules
